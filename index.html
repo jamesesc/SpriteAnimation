@@ -1,20 +1,75 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Game Project Title Goes Here</title>
-  
+    <title>Regular Show: The Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            min-height: 100vh; 
+            background-color: #333; 
+            overflow: auto;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0px #000;
+        }
+
+        canvas {
+            image-rendering: pixelated; 
+            /* Your desired TV border */
+            border: 33px solid black;
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            margin: 20px 0;
+        }
+
+        .info-section {
+            margin-top: 10px;
+        }
+
+        h2, h3, h4 {
+            margin: 5px 0;
+            font-weight: normal;
+        }
+    </style>
     <script type="text/javascript" src="./assetmanager.js"></script>
     <script type="text/javascript" src="./timer.js"></script>
     <script type="text/javascript" src="./gameengine.js"></script>
     <script type="text/javascript" src="./util.js"></script>
     <script type="text/javascript" src="./Background.js"></script>
     <script type="text/javascript" src="./Animator.js"></script>
-    <script type="text/javascript" src="./Mordecai.js"></script>
+    <script type="text/javascript" src="./Character.js"></script>
     <script type="text/javascript" src="./main.js"></script>
 </head>
 <body>
-    <canvas id="gameWorld" width="1024" height="768" style="background: white; border: 1px solid black" tabindex="0" autofocus></canvas>
+    <div class="game-container">
+        <h1>Regular Show</h1>
+
+        <canvas id="gameWorld" width="1024" height="600" tabindex="0" autofocus></canvas>
+
+        <div class="info-section">
+            <h2>TCSS 491: Animation Assignment</h2>
+            <h3>James Escudero</h3>
+            <h4>Controls: Movement: A / D (Shift to run)</h4>
+            <h4>Celebration: W</h4>
+            <h4>Chnage Character: G</h4>
+        </div>
+    </div>
 </body>
 </html>
