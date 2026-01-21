@@ -27,13 +27,13 @@ class Character {
             "idle": new Animator(this.mordecaiSprite, 1, 80, 65, 63, 2, .50),
             "running": new Animator(this.mordecaiSprite, 4, 195, 65, 67, 6, .15),
             "walking": new Animator(this.mordecaiSprite, 1, 144, 65, 60, 3, .3),
-            "woo": new Animator(this.mordecaiSprite, 0, 517, 65, 65, 6, .1)
+            "woo": new Animator(this.mordecaiSprite, 0, 517, 63, 65, 6, .1)
         };
 
         // Rigby Sprite Animations
         this.rigbyAnimations = {
             "idle": new Animator(this.rigbySprite, 1, 80, 65, 63, 2, .50),
-            "running": new Animator(this.rigbySprite,  4, 195, 60, 67, 3, .15),
+            "running": new Animator(this.rigbySprite,  4, 195, 62, 67, 3, .15),
             "walking": new Animator(this.rigbySprite, 1, 144, 65, 60, 3, .3),
             "woo": new Animator(this.rigbySprite, 0, 517, 65, 65, 6, .1)
         };
